@@ -11,7 +11,7 @@ function solution(nums){
       return a - b;
     })
    return asc;
-   console.log(asc)
+   // console.log(asc)
   }
 }
   
