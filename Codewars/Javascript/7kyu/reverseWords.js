@@ -9,12 +9,12 @@ function reverseWords(str) {
   let b = a.reverse();
   // console.log(b);
   let c = b.join('');
-  // console.log(c)
-  let d = c.split(' ')
-  // console.log(d)
-  let e = d.reverse()
+  // console.log(c);
+  let d = c.split(' ');
+  // console.log(d);
+  let e = d.reverse();
   // console.log(e);
-  let f = e.join(' ')
-  // console.log(f)
-  
+  let f = e.join(' ');
+  // console.log(f);
+  return f;
 }
