@@ -2,8 +2,8 @@
 
 function wordsToSentence(words) {
   
-    let join = words.join(' ');
+    let joinWords = words.join(' ');
     
-    return join;
+    return joinWords;
 
    }
