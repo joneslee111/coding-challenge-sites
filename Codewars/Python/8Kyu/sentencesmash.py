@@ -3,3 +3,7 @@
 def smash(words):
     combined = " ".join(words)
     return combined
+
+# a more efficient way:
+def smash(words):
+     return " ".join(words)
