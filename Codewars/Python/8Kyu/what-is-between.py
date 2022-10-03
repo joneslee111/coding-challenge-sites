@@ -12,3 +12,7 @@ def between(a,b):
         a += 1
     return lst
         
+# i refactored this to:
+
+def between(a,b):
+    return [i for i in range(a, b+1)]
