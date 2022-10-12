@@ -10,6 +10,17 @@
 # drop the next [1,2] since this would lead to 1 and 2 being in the result 3 times, and then take 3, which leads to [1,2,3,1,2,3].
 # With list [20,37,20,21] and number 1, the result would be [20,37,21].
 
+def delete_nth(order,max_e):
+    # code here
+    list = []
+    
+    for n in order:
+        if list.count(n) < max_e:
+            list.append(n)
+    print(list)
+    return list
+
+# another way of doing it:
 
 def delete_nth(order,max_e):
     # code here
