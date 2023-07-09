@@ -2,3 +2,28 @@
 // You only need to worry about english grammar rules for this kata, where anything that isn't singular (one of something), it is plural (not one of something).
 // All values will be positive integers or floats, or zero.
 
+public class Kata
+{
+  public static bool Plural(double n)
+  {
+    if (n != 1) {
+      return true;
+    } else {
+      return false;
+    }
+    
+  }
+}
+
+
+
+// a way to refactor would be:
+// - remove if statement and replace with return n != 1;
+// public class Kata
+// {
+//   public static bool Plural(double n)
+//   {
+//     return n != 1;
+//   }
+// }
+
