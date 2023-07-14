@@ -10,3 +10,29 @@
 // Input validation
 // If an empty value ( null, None, Nothing etc. ) is given instead of an array, or the given array is an empty list or a list with only 1 element, return 0.
 
+using System;
+using System.Linq;
+
+public static class Kata
+{
+  public static int Sum(int[] numbers)
+  {
+    int total = 0;
+    int arrLength = numbers.Count();
+    
+    if (numbers != null & numbers.Length > 1) {
+        
+    Array.Sort(numbers); 
+    
+    foreach ( var item in numbers) {
+      total += item;
+    }
+    
+    int newTotal = total - (numbers[arrLength - 1] + numbers[0]);
+    
+    return newTotal;
+    } else {
+      return 0;
+    }
+  }
+}
