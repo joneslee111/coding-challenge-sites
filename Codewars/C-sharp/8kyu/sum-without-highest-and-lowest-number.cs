@@ -1,5 +1,4 @@
 // Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
-
 // The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
 
 // Mind the input validation.
@@ -16,23 +15,24 @@ using System.Linq;
 public static class Kata
 {
   public static int Sum(int[] numbers)
-  {
-    int total = 0;
-    int arrLength = numbers.Count();
-    
-    if (numbers != null & numbers.Length > 1) {
+  { 
+    if (numbers != null) 
+    {
+      if (numbers.Length > 1) 
+      { 
+        int total = 0;
+        int arrLength = numbers.Count();
         
-    Array.Sort(numbers); 
+        Array.Sort(numbers); 
     
-    foreach ( var item in numbers) {
-      total += item;
-    }
+        foreach ( var item in numbers) 
+        {
+          total += item;
+        }
     
-    int newTotal = total - (numbers[arrLength - 1] + numbers[0]);
-    
-    return newTotal;
-    } else {
-      return 0;
-    }
+        return total - (numbers[arrLength - 1] + numbers[0]);
+      } 
+    } 
+    return 0;
   }
 }
