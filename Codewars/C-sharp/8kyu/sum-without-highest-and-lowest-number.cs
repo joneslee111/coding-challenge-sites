@@ -36,3 +36,18 @@ public static class Kata
     return 0;
   }
 }
+
+
+// CODEWARS REFACTOR:
+// using System;
+// using System.Linq;
+
+// public static class Kata
+// {
+//     public static int Sum(int[] numbers)
+//     {
+//         return numbers == null || numbers.Length < 2
+//             ? 0
+//             : numbers.Sum() - numbers.Max() - numbers.Min();
+//     }
+// }
