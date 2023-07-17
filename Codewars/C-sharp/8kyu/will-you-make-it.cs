@@ -3,3 +3,13 @@
 // Considering these factors, write a function that tells you if it is possible to get to the pump or not.
 
 // Function should return true if it is possible and false if not.
+
+using System;
+
+public static class Kata
+{
+  public static bool ZeroFuel(uint distanceToPump, uint mpg, uint fuelLeft)
+  {
+    return ((mpg * fuelLeft) >= distanceToPump);
+  }
+}
