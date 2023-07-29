@@ -23,4 +23,3 @@ public class Kata
   }
 }
 
-// This can be refactored to:
